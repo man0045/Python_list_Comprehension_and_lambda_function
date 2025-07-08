@@ -9,7 +9,7 @@
 
 # 1: without condition
 # to find the square of each number in the list
-squares = [x*x for x in range(5)]
+squares = [x for x in range(5)]
 print(squares)  # output: [0, 1, 4, 9,16]
 
 
