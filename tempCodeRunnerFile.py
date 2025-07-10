@@ -1,3 +1,6 @@
-nums = [1,2,3]
-results = [[f(x) for f in [lambda x : x+1, lambda x: x*2]] for x in nums]
-print(results)
+class myError(Exception):
+ pass
+try:
+ raise myError("this is custom Erorr")
+except myError as e:
+ print(e)
