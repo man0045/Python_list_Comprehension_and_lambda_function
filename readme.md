@@ -92,12 +92,72 @@ product = reduce(lambda x, y: x * y, [1, 2, 3, 4])
 - Basic understanding of loops and functions
 
 ---
+# 🐍 Python Exception Handling: Complete Guide with Code & Explanation
+
+This repository demonstrates **Python Exception Handling** using `try-except` block with real example, full explanation, output, error cases, and troubleshooting steps.
+
+---
+
+## 📌 Code Example: Basic Exception Handling
+
+```python
+def risky_code(a):
+    print(a / 0)  # ❌ This will raise a ZeroDivisionError
+
+try:
+    risky_code(5)
+except Exception as e:
+    print("Error Occured", e)
+def risky_code(a):
+    print(a / 0)
+try:
+    risky_code(5)
+except Exception as e:
+    print("Error Occured", e)
+Common Errors You May Face
+❌ 1. Indentation Error
+Make sure indentation is correct. Python is indentation-sensitive.
+
+❌ Incorrect:
+
+def risky_code(a):
+print(a / 0)
+✅ Correct:
+
+def risky_code(a):
+    print(a / 0)
+❌ 2. SyntaxError due to unwanted characters
+For example:
+
+python
+Copy
+Edit
+print("Hello"]
+❌ Output:
+
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+✅ Always check for brackets, colons, quotes.
+
+❌ 3. Python Version Issue
+If you're using Python 2 or your system default is Python 2.x, print() might fail.
+
+✅ Use Python 3:
+
+🧪 Modify for Specific Exception Handling
+You can catch specific exceptions for better clarity:
+
+
+try:
+    risky_code(5)
+except ZeroDivisionError as e:
+    print("Division by zero is not allowed:", e)
+
 
 ## 📖 References
 
 - [Python Docs - List Comprehension](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
 - [Python Docs - Lambda Functions](https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions)
-
+- [Python Official Docs – Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html #Exception Handling)
 ---
 
 ## 👨‍💻 Author
