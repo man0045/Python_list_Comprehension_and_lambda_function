@@ -1,0 +1,82 @@
+🔥 Python Interview Questions (Highly Detailed)
+1. What are Python's key features?
+- Interpreted, dynamically typed, memory-managed
+- High-level, multi-paradigm, rich libraries
+2. Difference between list, tuple, set, and dictionary
+| Type     | Ordered | Mutable | Duplicates | Syntax     |
+|----------|---------|---------|------------|------------|
+| List     | Yes     | Yes     | Yes        | `[]`       |
+| Tuple    | Yes     | No      | Yes        | `()`       |
+| Set      | No      | Yes     | No         | `{}`       |
+| Dict     | Yes     | Yes     | No (keys)  | `{key:val}`
+3. Difference between `is` and `==`
+- `==` compares values.
+- `is` compares object identity.
+Example:
+```python
+a = [1, 2]
+b = [1, 2]
+print(a == b)  # True
+print(a is b)  # False
+```
+4. What are decorators in Python?
+Used to modify function behavior.
+```python
+@decorator
+def greet():
+    print('Hello')
+```
+5. What is a lambda function?
+Anonymous single-line function.
+```python
+square = lambda x: x*x
+```
+6. Explain *args and **kwargs
+- *args: positional args
+- **kwargs: keyword args
+```python
+def f(*a, **k): print(a, k)
+```
+7. Memory Management
+- Reference counting, cyclic GC, uses `gc` module.
+8. List comprehension
+```python
+[x*x for x in range(5)]
+```
+9. Shallow vs Deep Copy
+```python
+import copy
+sh = copy.copy(x)
+dp = copy.deepcopy(x)
+```
+10. Module vs Package
+- Module: single file
+- Package: folder with `__init__.py`
+11. OOP concepts
+- Encapsulation, Inheritance, Polymorphism, Abstraction
+12. Generators
+```python
+yield 1
+yield 2
+```
+13. GIL
+Global Interpreter Lock limits true multithreading.
+14. Exception handling
+```python
+try: ... except: ... finally: ...
+```
+15. Method types
+- instance, @staticmethod, @classmethod
+16. Iterators and Iterables
+- Iterable: __iter__()
+- Iterator: __next__()
+17. Multithreading
+- Use `threading.Thread`
+- IO-bound tasks only (GIL)
+18. Duck Typing
+- Focus on behavior, not class.
+19. __init__ vs __new__
+- `__new__`: creates object
+- `__init__`: initializes object
+20. Python Data Types
+- int, float, bool, str, list, tuple, set, dict, NoneType
