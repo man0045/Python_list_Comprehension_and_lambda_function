@@ -61,14 +61,7 @@ product = reduce(lambda x, y: x * y, [1, 2, 3, 4])
 
 ---
 
-## 📂 Project Structure
 
-```
-├── list_comprehension_examples.py
-├── lambda_examples.py
-├── README.md
-└── requirements.txt
-```
 
 ---
 
