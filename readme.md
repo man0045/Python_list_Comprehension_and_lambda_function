@@ -12,6 +12,8 @@ Welcome to this Python project where we explore the power of **List Comprehensio
 - ✅ Lambda (Anonymous) Functions
 - ✅ Using Lambda with `map()`, `filter()`, and `reduce()`
 - ✅ Real-world examples and utility scripts
+- ✅ Exception Handling
+- ✅ Oops Concept
 
 ---
 
